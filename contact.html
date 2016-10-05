@@ -1,12 +1,11 @@
-<!--*PLEASE READ!!! Anything with Asteriks in the comments is comments from me, the other ones are from bootstrap, all comments from me in html will follow this comments format. 
-
-If you have any questions feel free to email me at umar.qureshi@uoit.net, or facebook msg me if you know me :) *-->
-
 <!DOCTYPE html>
+
 <html lang="en">
+    
 <head>
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     
     <!--* Tab Title *-->
     <title>Home - UOIT Motorsports</title>
@@ -16,22 +15,28 @@ If you have any questions feel free to email me at umar.qureshi@uoit.net, or fac
     
     <!-- Bootstrap core CSS --> <!--* U HAVE TO MAKE SURE THESE LINKS BELOW IS CORRECT OR ALL STYLING GOES AWAY *-->
     <link href="css/bootstrap.min.css" rel="stylesheet"> <!--* Cyborg Css, read the readme.txt in the css folder *-->
-    <link href="css/motorsportstylingsheet.css" rel="stylesheet"><!-- where all of our personal styling cmes from -->
+    <link href="css/motorsportstylingsheet.css" rel="stylesheet">
+    <link href="css/countdowncss.css" rel="stylesheet">
     
-    <!--* Font Awesome used for icons in navbar *-->
+    <!--* Font Awesome used for icons in navbar -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     
     
-    <!--* [Not in use, going to fix] Script used to call navbar.html *-->
-    <script type="text/javascript" src="js/csi.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/countdown.js"></script>
+    
+    
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    
+    
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="./Index_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="./Index_files/starter-template.css" rel="stylesheet">
-    <!--* Useless as i use another carousel <link href="./Carousel Template for Bootstrap_files/carousel.css" rel="stylesheet"> *-->
+    <!--Useless as i use another carousel <link href="./Carousel Template for Bootstrap_files/carousel.css" rel="stylesheet"> -->
     
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -112,96 +117,38 @@ If you have any questions feel free to email me at umar.qureshi@uoit.net, or fac
     </nav>
       
 <!--* End of NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! *-->   
-
-<!--* TAGLINE --------------------*-->
-      
-        <hgroup> <!--* We are using the imported font Orbitron calling the class from css in the span tag *-->
-            <h1 Align = center><span class = Tagline><strong>ELECTRYFYING</strong> ENGINEERING</span></h1>        
-        </hgroup>
-      
-<!--* End of TAGLINE --------------------*-->     
     
-<!--* SLIDESHOW/CAROUSEL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! *-->
+<br><br><br><h3> ik this isnt a contact page yet, but im simply using this page for testing the countdown rn</h3><br><br><br>
+
+    <div id="wrapper">
+    	<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<h1>WeBuild</h1>
+					<h2 class="subtitle">We're working hard to improve our website and we'll ready to launch after</h2>
+					<div id="countdown"></div>
+					<form class="form-inline signup" role="form">
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+					  </div>
+					  <button type="submit" class="btn btn-theme">Get notified!</button>
+					</form>		
+					
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+						<p class="copyright">Copyright © 2014 - <a href="http://bootstraptaste.com">Bootstraptaste.com</a></p>
+				</div>
+			</div>		
+		</div>
+	</div>
     
-<!--* Obtained this Carousal from Bootsnips @ "http://bootsnipp.com/snippets/xpoZ9" *--><!-- i dontneed to credit it, but its good for other coders who want to know where i got it from, imo half of the code was broken so i fixed and customized it (also the carousel uses css, so refer to that section as well)*-->
-        
-   <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-  <!-- Overlay -->
-  <div class="overlay"></div>
-
-  <!-- Indicators --><!--* The blue circles in the slideshow, and also this code states where to start the slide at, in the case "0" is the beginning and putting it to active makes it start there *-->
-  <ol class="carousel-indicators">
-    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#bs-carousel" data-slide-to="1"></li>
-    <li data-target="#bs-carousel" data-slide-to="2"></li>
-    <li data-target="#bs-carousel" data-slide-to="3"></li>
-  </ol>
-  
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item slides active">
-
-<!--* Slide 1 ----------------------*--> <!--* code for slide is explained in slide 1, apply it to each slide *-->
-        
-      <div class="slide-1"></div>
-      <div class="hero">
-          
-        <hgroup>
-            <h1>Want to go Fast?</h1><!-- Header in Slide 1 !-->        
-            <h3>Learn More About the Team and the Car!</h3><!-- Sub-Header in Slide 1 beneath the Header !-->  
-        </hgroup>
-          
-        <a href="about.html" type="button" class="btn btn-lg btn-primary">About »</a><!--* Button Link, links to Our About Page *-->
-          
-      </div>
-    </div>
-      
- <!--* Slide 2 ----------------------*-->  
-    <div class="item slides">
-      <div class="slide-2"></div>
-      <div class="hero">  
-          
-        <hgroup>
-            <h1>Our Main Sponsors!</h1>        
-            <h3>Come look at our other Sponsor's or You can Sponsor Us</h3>
-        </hgroup>       
-        <a href="sponsors.html" type="button" class="btn btn-lg btn-primary">Sponsors »</a>
-        <a href="sponsorsus.html" type="button" class="btn btn-lg btn-primary">Sponsor Us »</a><!--* yea 2 buuttons on one slide, isnt it amazing *!-->
-          
-      </div>
-    </div>
-      
- <!--* Slide 3 ----------------------*--> 
-    <div class="item slides">
-      <div class="slide-3"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1>We are amazing</h1><!--* so amazing *-->      
-            <h3 class = TextOutline>Visit our Blog to find out</h3>
-        </hgroup>
-        <a href="blog.html" type="button" class="btn btn-lg btn-primary">Blog »</a>
-      </div>
-    </div> 
-      
-  <!--* Slide 4 -----FIX--------------*--> 
-    <div class="item slides">
-      <div class="slide-4"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1>Summer Competition</h1>        
-            <h3>Learn about where we will be competing at the end of this year</h3>
-        </hgroup>
-        <a href="Competition.html" type="button" class="btn btn-lg btn-primary">Competition »</a>
-      </div>
-    </div>     
-      
-      
-  </div> 
-</div>     
-        
-<!--* End of SLIDESHOW/CAROUSEL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! *-->   
-      
-      
+    
+ <!--==============================================================!-->   
+    
+     
 <!--* BOTTOM FOR EVERY PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! *-->
       
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -236,15 +183,6 @@ If you have any questions feel free to email me at umar.qureshi@uoit.net, or fac
           <p><a class="btn btn-primary" href="https://www.facebook.com/UOITMotorsportsElectric/?fref=ts" target="_blank" role="button">Uoit MS Facebook »</a></p>
             
         </div><!-- /.col-lg-4 -->
-            
-            
-              <!--* Test - Other FB bot *-->
-              <!--* class ="big-icon"><i class="fa fa-facebook fa-5x"></i></div></a>
-
-              <p>Like us on facebook to stay up to date with our Team</p><br>
-              <p><a class="btn btn-primary" href="https://www.facebook.com/UOITMotorsportsElectric/?fref=ts" target="_blank" role="button">Uoit MS Facebook »</a></p>
-
-              </div>--><!-- /.col-lg-4 -->
             
         <div class="col-lg-4">
             

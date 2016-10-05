@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import 'https://fonts.googleapis.com/css?family=Orbitron';
+
+
+/*! PLEASE READ!!! Anything with explanation marks in the comments is comments from me, the other ones are from bootstrap, all comments from me in css will follow this comments format. If you have any questions feel free to email me at umar.qureshi@uoit.net, or facebook msg me if you know me :) !*/
+
+/*! The top part of the imports, is just importing fonts from the website, it must be at the top to load first !*/
+
+/*! All the css work I have done is at the bottom, so ignore the middle as thats from bootswatch, and only touch if you know what you are doing */
+
+
+/*! Below is where i started writing my own and using css from bootsnip
+
+/*! CAROUSEL-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------!*/
+
+/*! Obtained this Carousal from Bootsnips @ "http://bootsnipp.com/snippets/xpoZ9" *--><!-- i dont need to credit it, but its good for other coders who want to know where i got it from, imo half of the code was broken so i fixed and customized it (also the carousel is applied to html in index, so refer to that section as well) !*/
+
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 85vh; /*! This controls height of the carousal screen !*/
+}
+.fade-carousel .carousel-inner .item {
+    height: 85vh; /*! also has something to do with the height, just keep the heigh vals the same, trust me ;) !*/
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: blue; /*! Contols the color of the dots at te bottom of the slides and other properties as well !*/
+    border-color: blue;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active { /*! has to do something with the active slide and the circle, probably to do with the color being filled but idk !*/
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/*! Below the overlay puts a heavy shade filter like a heavy shadow on the pic making it darker, its dumb so i removed it by making it a comment !*/
+
+/********************************/
+/*            Overlay           */
+/********************************/
+/*!
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: 0;
+} !*/
+
+
+/*! custom buttons given by the carousal creater, i didnt use them but i just left it active if some property that i dont know of is being uses !*/
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/*! BELOW MOST IMPORTANT PART OF CAROUSAL CSS !*/
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3, 
+.fade-carousel .slides .slide-4 
+/*! ^Above is creating each slide, if you need another one copy a line and paste it and replace the number with the next number. (make sure ur comma syntax is correct!) !*/
+{
+  height: 90vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+} /*! idk whats happening between the enclosed curly brackets, but i left it as is and it works fine, im sure if you play with it u can figure out what is does :) !*/
+
+/*! Very important part below. This is where you place your slide pictures, make sure the path is correct, or you can get your image from a webpage link (i personally dont like to do that, i like to call pics from the folder) !*/
+
+/*! Very important part below. Make sure if you added extra slides, that you copy and paste one of the small blocks of code and replace it with the correct slide number, and call the right image. (also make sure a bit above u created the actal slide, read comments above for more details.) !*/
+
+/*! IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !*/
+.fade-carousel .slides .slide-1 {
+  background-image: url("../blainehelmet1.JPG"); 
+}
+
+.fade-carousel .slides .slide-2 {
+  background-image: url("../TIKO Logo.png");
+}
+
+.fade-carousel .slides .slide-3 {
+  background-image: url("../contactpic.JPG");
+}
+
+.fade-carousel .slides .slide-4 {
+  background-image: url("../competition2slide.jpg");
+}
+/*! End of IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !*/
+
+
+/*===============================================================================================*/
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.team{
+    padding:75px 0;
+}
+h6.description{
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #999;
+	border-bottom: 1px solid rgba(0, 0, 0,0.1);
+	padding-bottom: 5px;
+}
+.profile{
+	margin-top: 25px;
+}
+.profile h1{
+	font-weight: normal;
+	font-size: 20px;
+	margin:10px 0 0 0;
+}
+.profile h2{
+	font-size: 14px;
+	font-weight: lighter;
+	margin-top: 5px;
+}
+.profile .img-box{
+	opacity: 1;
+	display: block;
+	position: relative;
+}
+.profile .img-box:after{
+	content:"";
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+.img-box ul{
+	position: absolute;
+	z-index: 2;
+	bottom: 50px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+	height: 0px;
+	margin:0px;
+	opacity: 0;
+}
+.profile .img-box:after, .img-box ul, .img-box ul li{
+	-webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.img-box ul i{
+	font-size: 20px;
+	letter-spacing: 10px;
+}
+
+
+
+/*===============================================================================================*/
+
+
+
+
+
+
+/*! Other Font Stylings     ~(over here is misc css ive written for text and other styling !*/ 
+
+
+/*!Changing Navbar link colors!*/
+.navbar .nav > li > a { color: deepskyblue}
+
+/*!Tagline font!*/
+.Tagline
+{
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*! font-family: 'Oswald', sans-serif; (font i was going to use but not using anymore) !*/
+
+/*! Changing <hr>'s line color !*/
+hr {
+  background-color: deepskyblue;
+  color: deepskyblue;
+  border-color: deepskyblue;
+}
+
+.Line {
+  background-color: deepskyblue;
+}
+
+/*! Outline text for pesky annoying pics with white in them make text unreadable, so this class fixes tht !*/
+
+.TextOutline {
+    text-shadow: 2px 0 0 darkslategrey, -2px 0 0 darkslategrey, 0 2px 0 darkslategrey, 0 -2px 0 darkslategrey, 1px 1px
+}
+
+
+/*For Sponsor page*/
+
+   /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+#circle-shape-example { 
+  font-family: Open Sans, sans-serif; 
+  margin: 2rem; 
+}
+#circle-shape-example p { 
+  line-height: 1.8; 
+}
+#circle-shape-example .curve { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
+/*! used to center buttons (ex on sponser page) !*/
+.wrapper {
+    text-align: center;
+}
+
+.big-icon {
+    font-size: 32px;
+    text-align: center;
+}
+
+.small-icon {
+    font-size: 20px;
+}
+
+
+/*!-------------------------------------!*/
+
+
+

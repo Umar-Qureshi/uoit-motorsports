@@ -1,3 +1,0 @@
-This CSS is the Cyborg Theme that I have obtained from Bootswatch website. This is not the original css for Bootstrap. Any file in this folder with -def in its name is
-the original Css, rename it properly kinda like replacing the file to revert back to original if needed. If you have questions email me at: umar.qureshi@uoit.net, or 
-facebook me or msg me on slack if you know me. Have a nice day :)

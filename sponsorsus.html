@@ -7,12 +7,19 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="Mlogo.jpg">
+    
+    <!--* Link below is to place the image in the tab *-->
+    <link rel="icon" href="images/tabicon.jpg">
 
     <title>Sponsor Us - UOIT Motorsports</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS --> <!--* U HAVE TO MAKE SURE THESE LINKS BELOW IS CORRECT OR ALL STYLING GOES AWAY *-->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> <!--* Cyborg Css, read the readme.txt in the css folder *-->
+    <link href="css/motorsportstylingsheet.css" rel="stylesheet"><!-- where all of our personal styling cmes from -->
+    
+    <!--* Font Awesome used for icons in navbar *-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="./Carousel Template for Bootstrap_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -36,7 +43,65 @@
 
 <!--* NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! *-->
       
-<div data-include="NavBar.html"></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        
+      <div class="container">
+          
+        <div class="navbar-header">
+            
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span> <!-- This code is for the toggle menu when browser size is small (very mobile friendly) -->
+            
+            <span class="icon-bar"></span><!--* Each codeline, represents how many lines appear in the right box for the toggle when browser size is small *-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            
+      <!--* Logo Link to home for Navbar *-->
+        
+      <a href="index.html">
+        <img src="UOIT MotorSportsLogo.PNG" alt="UOIT MS Logo" style="width:125px;height:50px;float:left;"><!-- search logo -->
+      </a> 
+            
+      <!--* end logo img *-->
+            
+        </div>
+          
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+              
+            <!--* Links to other pages *-->
+              
+            <li><a href="about.html" class = NavbarLink>&nbsp;&nbsp;About</a></li>
+              
+            <li><a href="car.html">Car</a></li>
+            
+            <li><a href="Teambios.html">Team Bios</a></li>
+              
+            <li><a href="blog.html">Blog</a></li>
+              
+            <li><a href="sponsors.html">Sponsors</a></li> 
+              
+            <li><a href="sponsorsus.html">Sponsor Us</a></li>
+              
+            <li><a href="contact.html">Contact</a></li>
+             
+            <!--* Icon Links *-->
+              
+            <li><a href="https://www.facebook.com/UOITMotorsportsElectric/?fref=ts" target="_blank">
+                <div class=small-icon><i class="fa fa-facebook"></i></div></a></li>
+              
+            <li><a href="https://www.facebook.com/UOITMotorsportsElec]tric/?fref=ts" target="_blank">
+                <div class=small-icon><i class="fa fa-instagram"></i></div></a></li>
+              
+            <li><a href="https://www.facebook.com/UOITMotorsportsElectric/?fref=ts" target="_blank">
+                <div class=small-icon><i class="fa fa-snapchat-ghost"></i></div></a></li>
+              
+              
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
       
 <!--* End of NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! *-->  
 
@@ -55,10 +120,10 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Sponsor Us. <span class="text-muted">There are many benefits.</span></h2>
-          <p class="lead">As we are a just simply a team, we need finding from all aspects, not just money, we need to be sponsered for parts, tools and services. The main advantage of sponsering us is advertising! Depending on the sponsership package you choose, we can advertise you on our website, car, helmet, shirts and many more. So please check out our sponsership packages below for more details if you want to kindly sponser us. </p>
+          <p class="lead">As we are a just simply a team, we need finding from all aspects, not just money, we need to be sponsered for parts, tools and services. The main advantage of sponsering us is advertising! Depending on the sponsorship package you choose, we can advertise you on our website, car, helmet, shirts and many more. So please check out our sponsership packages below for more details if you want to kindly sponser us. </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="Tools.JPG" data-holder-rendered="true">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/tools.jpg" data-holder-rendered="true">
         </div>
       </div>
 
@@ -80,7 +145,7 @@
             
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="Gold.jpg" data-holder-rendered="true">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/Gold.jpg" data-holder-rendered="true">
         </div>
       </div>
 
@@ -100,7 +165,7 @@
             
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="silver.jpg" data-holder-rendered="true">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/silver.jpg" data-holder-rendered="true">
         </div>
       </div>
 
