@@ -18,12 +18,12 @@
 /*
 Fade content bs-carousel with hero headers
 Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
 */
 
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
+
 .fade-carousel {
     position: relative;
     height: 85vh; /*! This controls height of the carousal screen !*/
@@ -138,7 +138,7 @@ Image credits: unsplash.com
 
 /*! Very important part below. Make sure if you added extra slides, that you copy and paste one of the small blocks of code and replace it with the correct slide number, and call the right image. (also make sure a bit above u created the actal slide, read comments above for more details.) !*/
 
-/*! IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !*/
+/*! SLIDE IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !*/
 .fade-carousel .slides .slide-1 {
   background-image: url("../blainehelmet1.JPG"); 
 }
@@ -154,10 +154,12 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-4 {
   background-image: url("../competition2slide.jpg");
 }
-/*! End of IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !*/
+/*! End of Slide IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !*/
 
 
 /*===============================================================================================*/
+
+
 
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
 body{
@@ -224,7 +226,18 @@ h6.description{
 
 
 
-/*===============================================================================================*/
+
+/*===============================================================================================*/  
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -285,8 +298,11 @@ hr {
 }
 
 /*! used to center buttons (ex on sponser page) !*/
-.wrapper {
+.centerr {
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .big-icon {
